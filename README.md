@@ -26,7 +26,6 @@
 <a href="https://linkedin.com/in/shubham-verma-7277a0200" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="shubham-verma-7277a0200" height="30" width="40" /></a>
 <a href="https://instagram.com/be4shubham" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="be4shubham" height="30" width="40" /></a>
 <a href="https://hashnode.com/shubhamv47" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hashnode.svg" alt="shubhamv47" height="30" width="40" /></a>
-<a href="/https://shubhamv.hashnode.dev/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/rss.svg" alt="https://shubhamv.hashnode.dev/" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
