@@ -1,4 +1,8 @@
-<h1 align="center">Hi there 👋, my name is Shubham</h1>
+<h1 align="center">
+  <a href="#">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hey,+There!+👋;Mohasin+here...;Glad+to+see+you!&center=true&size=30">
+  </a>
+</h1>
 <h3 align="center">A passionate developer from India who loves to learn new things</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=shubham1091&label=Profile%20views&color=0e75b6&style=flat" alt="shubham1091" /> </p>
