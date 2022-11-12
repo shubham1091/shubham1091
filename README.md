@@ -5,8 +5,8 @@
 </h1>
 <h3 align="center">A passionate developer from India who loves to learn new things</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=shubham1091&label=Profile%20views&color=0e75b6&style=flat" alt="shubham1091" /> </p>
-<img src="https://activity-graph.herokuapp.com/graph?username=shubham1091&theme=dracula&bg_color=00000000&color=878787&line=4c8ed9&point=00000000&area=true&hide_border=true"><br><br>
+<!-- <p align="left"> <img src="https://komarev.com/ghpvc/?username=shubham1091&label=Profile%20views&color=0e75b6&style=flat" alt="shubham1091" /> </p>
+<img src="https://activity-graph.herokuapp.com/graph?username=shubham1091&theme=dracula&bg_color=00000000&color=878787&line=4c8ed9&point=00000000&area=true&hide_border=true"><br><br> -->
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=shubham1091" alt="shubham1091" /></a> </p>
 
