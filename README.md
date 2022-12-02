@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="#">
-    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hey,+There!+👋;SHUBHAM+here...;Glad+to+see+you!&center=true&size=20">
+    <img src="https://readme-typing-svg.herokuapp.com/?lines=Hey,+There!+👋;SHUBHAM+here...;Glad+to+see+you!&center=true&size=35">
   </a>
 </h1>
 <h3 align="center">A passionate developer who loves to learn new things</h3>
@@ -60,9 +60,9 @@
 
 <p align='center'>
   
-  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=shubham1091&theme=radical&hide=jupyter%20notebook&layout=compact&langs_count=8" width="50%">
+  <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=shubham1091&theme=radical&hide=jupyter%20notebook&layout=compact&langs_count=8" width="40%">
   
-  <img width="450px" style="border-style:solid" src="https://github-readme-streak-stats.herokuapp.com/?user=shubham1091&theme=radical" alt="AaquibAli Github Stats"width="50%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=shubham1091&theme=radical" width="40%"  />
   
  </p> 
 <p align="center"> 
