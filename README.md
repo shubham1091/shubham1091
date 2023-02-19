@@ -1,4 +1,4 @@
-<h1 align="center">
+.<h1 align="center">
   <a href="#">
     <img src="https://readme-typing-svg.herokuapp.com/?lines=Hey,+There!+👋;SHUBHAM+here...;Glad+to+see+you!&center=true&size=35">
   </a>
@@ -99,13 +99,7 @@
   </p>
 </details>
 
-<details><summary><h3>⚡ Recent GitHub Activity</h3></summary>
 
-----
-
-<a href="https://github.com/shubham1091"><img alt="Abhishek's Activity Graph" src="https://activity-graph.herokuapp.com/graph?username=shubham1091&custom_title=shubham1091's%20Contribution%20Graph&theme=react-dark" /></a>
- 
-</details>
 
 <details><summary> <h3> :trophy: Git profile Trophies </h3></summary>
 
