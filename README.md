@@ -24,7 +24,7 @@
 
 - :school: I am a `Student` from Maharaja Ganga Singh University.
 - :technologist: I love open-source contribution.
-- :student: I’m currently learning `Java`, `Dev-ops`and `Block-chain`.
+- :student: I’m currently learning `Java`, `Dev-ops` and `Block-chain`.
 - :nerd_face: Always `learning new things`.
 - :thinking: I’m currently open for `an Intern` or a new `job opportunity`, 
 <!-- - this is [Resume](https://drive.google.com/file/d/1DsQyoNYt9Ghg-8hw5P-DSx77B227H71y/view?usp=sharing). -->
@@ -35,9 +35,9 @@
 <p align="center">
 	<a href="mailto:shubhamverma1091@gmail.com"><img img src="https://img.shields.io/badge/gmail-%23EA4335.svg?style=plastic&logo=gmail&logoColor=white" alt="Gmail"/></a>
 	<a href="https://github.com/shubham1091"><img src="https://img.shields.io/badge/github-%23181717.svg?style=plastic&logo=github&logoColor=white" alt="GitHub"/></a>
-	<a href="https://www.linkedin.com/in/shubham-verma-7277a0200/"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-	<a href="https://www.instagram.com/be4shubham/"><img src="https://img.shields.io/badge/instagram-%23E4405F.svg?style=plastic&logo=instagram&logoColor=white" alt="Instagram"/></a>
-  	<a href="https://twitter.com/be4shubham"><img src="https://img.shields.io/badge/twitter-%230A66C2.svg?style=plastic&logo=twitter&logoColor=white" alt="Twitter"/></a>
+	<a href="https://www.linkedin.com/in/shubham-real/"><img src="https://img.shields.io/badge/linkedin-%230A66C2.svg?style=plastic&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+	<a href="https://www.instagram.com/smithofcode/"><img src="https://img.shields.io/badge/instagram-%23E4405F.svg?style=plastic&logo=instagram&logoColor=white" alt="Instagram"/></a>
+  	<a href="https://twitter.com/smithofcode"><img src="https://img.shields.io/badge/twitter-%230A66C2.svg?style=plastic&logo=twitter&logoColor=white" alt="Twitter"/></a>
 </p>
 
 ----
