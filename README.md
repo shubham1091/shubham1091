@@ -9,8 +9,6 @@
 
 ## 💻 About Me
 
-### Hi, I’m Shubham Verma 👋
-
 I’m an **AI & ML enthusiast** and **full-stack developer** on a mission to build innovative tech solutions. Currently pursuing my MCA in AI at **Amity University**, I blend creativity with technical expertise to craft seamless experiences. From developing cloud-powered applications to solving real-world problems with data, I’m all about creating impactful software.
 
 ## 🛠️ Tech Stack
