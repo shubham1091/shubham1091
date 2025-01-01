@@ -42,4 +42,4 @@ I’m an **AI & ML enthusiast** and **full-stack developer** on a mission to bui
 
 ### 🚀 Let’s Collaborate!
 
-I'm excited to contribute to **open-source**, collaborate on **impactful projects**, or just geek out over tech! Feel free to connect. 😊
+I'm excited to contribute to **open-source**, collaborate on **impactful projects**, or just geek out over tech! Feel free to connect.
