@@ -16,17 +16,17 @@
 
 ## Executive summary
 
-| Signal | Evidence |
-| --- | --- |
-| **Primary lens** | Data analysis that supports clear decisions |
-| **Build surface** | Full-stack applications, dashboards, APIs, and ML pipelines |
-| **Modeling work** | Random Forest pipeline with config-driven, reproducible runs |
+| Signal               | Evidence                                                          |
+| -------------------- | ----------------------------------------------------------------- |
+| **Primary lens**     | Data analysis that supports clear decisions                       |
+| **Build surface**    | Full-stack applications, dashboards, APIs, and ML pipelines       |
+| **Modeling work**    | Random Forest pipeline with config-driven, reproducible runs      |
 | **Measured outcome** | Roughly 60-70% lower decision-error cost than baseline heuristics |
 
 ## Capability map
 
-| Analyze | Build | Operate |
-| --- | --- | --- |
+| Analyze                                                                                                                                                                                                                                                                                                                                                      | Build                                                                                                                                        | Operate                                                                                                                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | <img src="https://skillicons.dev/icons?i=python,r" height="32" alt="Python and R" /><br /><img src="https://img.shields.io/badge/SQL-1A1B27?style=flat-square&logo=databricks&logoColor=7DCFFF" height="20" alt="SQL" /> <img src="https://img.shields.io/badge/Tableau-1A1B27?style=flat-square&logo=tableau&logoColor=73DACA" height="20" alt="Tableau" /> | <img src="https://skillicons.dev/icons?i=javascript,nextjs,react,tailwind" height="32" alt="JavaScript, Next.js, React, and Tailwind CSS" /> | <img src="https://skillicons.dev/icons?i=postgres,firebase,azure" height="32" alt="PostgreSQL, Firebase, and Azure" /> |
 
 ## Case studies

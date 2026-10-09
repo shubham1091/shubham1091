@@ -14,11 +14,13 @@ async function github(path) {
       Accept: 'application/vnd.github+json',
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
       'X-GitHub-Api-Version': '2022-11-28',
+      'User-Agent': 'shubham1091-profile-refresh',
     },
   });
 
   if (!response.ok) {
-    throw new Error(`GitHub API ${response.status}: ${path}`);
+    const details = await response.text();
+    throw new Error(`GitHub API ${response.status}: ${path} - ${details}`);
   }
 
   return response.json();
