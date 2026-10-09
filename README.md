@@ -1,40 +1,13 @@
 # Shubham Verma
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=24&duration=2800&pause=900&color=70A5FD&center=true&vCenter=true&width=520&lines=Data+Analyst;Software+Developer;ML+Engineer" alt="Data Analyst, Software Developer, ML Engineer" />
-</p>
-
-<p align="center">
-  <strong>DECISION SYSTEMS / SOFTWARE / DATA</strong><br />
-  I turn operational questions into analysis, usable products, and reproducible machine-learning workflows.
-</p>
-
-<p align="center">
-  <a href="https://github.com/shubham1091"><img src="https://img.shields.io/badge/GitHub-shubham1091-1A1B27?style=flat-square&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://github.com/shubham1091/shubham1091/actions/workflows/snake.yml"><img src="https://img.shields.io/github/actions/workflow/status/shubham1091/shubham1091/snake.yml?style=flat-square&label=automated%20profile" alt="Automated profile workflow" /></a>
-</p>
-
-## Executive summary
-
-| Signal               | Evidence                                                          |
-| -------------------- | ----------------------------------------------------------------- |
-| **Primary lens**     | Data analysis that supports clear decisions                       |
-| **Build surface**    | Full-stack applications, dashboards, APIs, and ML pipelines       |
-| **Modeling work**    | Random Forest pipeline with config-driven, reproducible runs      |
-| **Measured outcome** | Roughly 60-70% lower decision-error cost than baseline heuristics |
-
-## Capability map
-
-| Analyze                                                                                                                                                                                                                                                                                                                                                      | Build                                                                                                                                        | Operate                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| <img src="https://skillicons.dev/icons?i=python,r" height="32" alt="Python and R" /><br /><img src="https://img.shields.io/badge/SQL-1A1B27?style=flat-square&logo=databricks&logoColor=7DCFFF" height="20" alt="SQL" /> <img src="https://img.shields.io/badge/Tableau-1A1B27?style=flat-square&logo=tableau&logoColor=73DACA" height="20" alt="Tableau" /> | <img src="https://skillicons.dev/icons?i=javascript,nextjs,react,tailwind" height="32" alt="JavaScript, Next.js, React, and Tailwind CSS" /> | <img src="https://skillicons.dev/icons?i=postgres,firebase,azure" height="32" alt="PostgreSQL, Firebase, and Azure" /> |
-
-## Case studies
-
-The project board below is generated from my public GitHub repositories. Descriptions refresh automatically.
-
-<!-- PROJECTS:START -->
-| Repository | Description |
+  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&weight=600&size=24&duration=2800&pause=900&color=70A5FD&center=true&vCenter=true&width=520&lines=Data+Analyst;Software+Developer;Applied+Machine+Learning" alt="Data Analyst, Software Developer, Applied Machine Learning" />
+| Project | What it does |
+| ------- | ------------ |
+| [KPA-Election](https://github.com/shubham1091/KPA-Election) | Full-stack election platform with admin, voter and API layers in one Next.js app. Postgres, JWT auth, deployed live. |
+| [NEC-assessment](https://github.com/shubham1091/NEC-assessment) | Config-driven ML pipeline that picks the lowest-cost power plant per demand scenario. Random Forest, reproducible one-command CLI, 60-70% lower decision-error cost than baseline heuristics. |
+| [Shift-sync](https://github.com/shubham1091/Shift-sync) | Chrome extension that reads a UKG/Kronos work schedule and syncs it to Google Calendar. |
+| [data-sec-assessment](https://github.com/shubham1091/data-sec-assessment) | Adaptive security questionnaire that scores a company's readiness and generates tailored recommendations. |
 | --- | --- |
 | [Email-Desing](https://github.com/shubham1091/Email-Desing) | Public project repository. |
 | [dotfiles](https://github.com/shubham1091/dotfiles) | One script from a fresh macOS install to a fully configured workstation: |
@@ -43,6 +16,12 @@ The project board below is generated from my public GitHub repositories. Descrip
 | [NEC-assessment](https://github.com/shubham1091/NEC-assessment) | **Advanced Data Machine Learning (ADML) Group 5 Project** |
 | [KPA-Election](https://github.com/shubham1091/KPA-Election) | Single Next.js application with admin, voter, and API functionality all in one. |
 <!-- PROJECTS:END -->
+| Project | What it does |
+| ------- | ------------ |
+| [KPA-Election](https://github.com/shubham1091/KPA-Election) | Full-stack election platform with admin, voter and API layers in one Next.js app. Postgres, JWT auth, deployed live. |
+| [NEC-assessment](https://github.com/shubham1091/NEC-assessment) | Config-driven ML pipeline that picks the lowest-cost power plant per demand scenario. Random Forest, reproducible one-command CLI, 60-70% lower decision-error cost than baseline heuristics. |
+| [Shift-sync](https://github.com/shubham1091/Shift-sync) | Chrome extension that reads a UKG/Kronos work schedule and syncs it to Google Calendar. |
+| [data-sec-assessment](https://github.com/shubham1091/data-sec-assessment) | Adaptive security questionnaire that scores a company's readiness and generates tailored recommendations. |
 
 ## GitHub dashboard
 
@@ -74,8 +53,8 @@ _Generated daily from the public GitHub API by GitHub Actions. LinkedIn and othe
 <!-- PROFILE_STATS:END -->
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=shubham1091&show_icons=true&hide_border=true&theme=tokyonight&bg_color=1A1B27&title_color=70A5FD" alt="GitHub stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubham1091&layout=compact&hide_border=true&theme=tokyonight&bg_color=1A1B27&title_color=70A5FD" alt="Top languages" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=shubham1091&show_icons=true&hide_border=true&hide_rank=true&hide=stars,contribs&theme=tokyonight&bg_color=1A1B27&title_color=70A5FD" alt="GitHub stats" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shubham1091&layout=compact&hide_border=true&exclude_repo=Email-Desing,dotfiles,portfolio&hide=html,css&theme=tokyonight&bg_color=1A1B27&title_color=70A5FD" alt="Top languages" />
 </p>
 
 <p align="center">
@@ -84,4 +63,4 @@ _Generated daily from the public GitHub API by GitHub Actions. LinkedIn and othe
 
 ## Contact
 
-[LinkedIn](TODO_LINKEDIN_URL) | [Email](mailto:TODO_EMAIL@example.com)
+[LinkedIn](https://www.linkedin.com/in/smithofcode/) | [Email](mailto:shubhamverma1091@gmail.com)

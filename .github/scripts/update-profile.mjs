@@ -1,20 +1,21 @@
-const fs = await import('node:fs/promises');
+const fs = await import("node:fs/promises");
 
 const owner = process.env.GITHUB_REPOSITORY_OWNER || process.env.GITHUB_ACTOR;
 const token = process.env.GITHUB_TOKEN;
-const readmePath = 'README.md';
+const readmePath = "README.md";
+const coreStack = "Python, SQL, TypeScript, Next.js";
 
 if (!owner) {
-  throw new Error('GITHUB_REPOSITORY_OWNER is required');
+  throw new Error("GITHUB_REPOSITORY_OWNER is required");
 }
 
 async function github(path) {
   const response = await fetch(`https://api.github.com${path}`, {
     headers: {
-      Accept: 'application/vnd.github+json',
+      Accept: "application/vnd.github+json",
       ...(token ? { Authorization: `Bearer ${token}` } : {}),
-      'X-GitHub-Api-Version': '2022-11-28',
-      'User-Agent': 'shubham1091-profile-refresh',
+      "X-GitHub-Api-Version": "2022-11-28",
+      "User-Agent": "shubham1091-profile-refresh",
     },
   });
 
@@ -26,97 +27,65 @@ async function github(path) {
   return response.json();
 }
 
-async function getRepositories() {
-  const repositories = [];
-
-  for (let page = 1; page <= 10; page += 1) {
-    const batch = await github(`/users/${owner}/repos?per_page=100&page=${page}&type=owner&sort=updated`);
-    repositories.push(...batch);
-    if (batch.length < 100) break;
-  }
-
-  return repositories;
+function capitalize(value, fallback) {
+  const text = value || fallback;
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }
 
+// Returns a readable label, or null for events that are noise.
+// The Events API no longer includes a commits array on PushEvent,
+// so pushes are labelled by branch instead of commit count.
 function eventLabel(event) {
-  const labels = {
-    CreateEvent: 'Created repository content',
-    ForkEvent: 'Forked a repository',
-    IssuesEvent: `${event.payload.action || 'Updated'} an issue`,
-    PullRequestEvent: `${event.payload.action || 'Updated'} a pull request`,
-    PushEvent: `Pushed ${event.payload.commits?.length || 0} commit(s)`,
-    ReleaseEvent: `${event.payload.action || 'Published'} a release`,
-    WatchEvent: 'Starred a repository',
-  };
+  const payload = event.payload || {};
 
-  return labels[event.type] || event.type.replace('Event', ' activity');
+  switch (event.type) {
+    case "PushEvent": {
+      const branch = payload.ref?.replace("refs/heads/", "");
+      return branch ? `Pushed to ${branch}` : "Pushed changes";
+    }
+    case "CreateEvent":
+      return `Created a ${payload.ref_type || "repository"}`;
+    case "PullRequestEvent":
+      return `${capitalize(payload.action, "updated")} a pull request`;
+    case "IssuesEvent":
+      return `${capitalize(payload.action, "updated")} an issue`;
+    case "ReleaseEvent":
+      return `${capitalize(payload.action, "published")} a release`;
+    case "ForkEvent":
+      return "Forked a repository";
+    case "PublicEvent":
+      return "Made a repository public";
+    default:
+      return null;
+  }
 }
 
 function repositoryName(event) {
-  return event.repo?.name?.replace(`${owner}/`, '') || 'GitHub';
+  return event.repo?.name?.replace(`${owner}/`, "") || "GitHub";
 }
 
-function cleanText(value, fallback) {
-  return (value || fallback).replace(/[|\r\n]+/g, ' ').replace(/[^\x20-\x7E]/g, '-').trim();
-}
-
-async function repositoryDescription(repository) {
-  if (repository.description) {
-    return cleanText(repository.description, 'Public project repository.');
-  }
-
-  try {
-    const readme = await github(`/repos/${owner}/${repository.name}/readme`);
-    const content = Buffer.from(readme.content, 'base64').toString('utf8');
-    const firstUsefulLine = content
-      .split('\n')
-      .map((line) => line.trim())
-      .find((line) => line.length > 20 && !line.startsWith('#') && !line.startsWith('!['));
-
-    if (firstUsefulLine) {
-      return cleanText(firstUsefulLine.replace(/\[([^\]]+)\]\([^\)]+\)/g, '$1'), 'Public project repository.');
-    }
-  } catch {
-    // Some repositories do not expose a README through the public API.
-  }
-
-  return 'Public project repository.';
-}
-
-async function projectRows(repositories) {
-  const selectedRepositories = repositories
-    .filter((repository) => repository.name !== owner && !repository.archived)
-    .sort((first, second) => {
-      const starDifference = second.stargazers_count - first.stargazers_count;
-      return starDifference || new Date(second.updated_at) - new Date(first.updated_at);
-    })
-    .slice(0, 6);
-
-  return Promise.all(selectedRepositories.map(async (repository) => {
-      const description = await repositoryDescription(repository);
-      return `| [${repository.name}](${repository.html_url}) | ${description} |`;
-    }));
-}
-
-const [profile, repositories, events] = await Promise.all([
+const [profile, events] = await Promise.all([
   github(`/users/${owner}`),
-  getRepositories(),
-  github(`/users/${owner}/events/public?per_page=20`),
+  github(`/users/${owner}/events/public?per_page=50`),
 ]);
 
-const latestEvent = events[0];
-const latestDate = latestEvent ? latestEvent.created_at.slice(0, 10) : 'No recent public activity';
-const recentRows = events.slice(0, 3).map((event) => `| ${event.created_at.slice(0, 10)} | ${eventLabel(event)} | ${repositoryName(event)} |`);
-const projectRowsMarkdown = await projectRows(repositories);
-const signalRows = `
-<tr><td>Public repositories</td><td align="right">${profile.public_repos}</td></tr>
-<tr><td>Followers</td><td align="right">${profile.followers}</td></tr>
-<tr><td>Latest activity</td><td align="right">${latestDate}</td></tr>`;
-const activityRows = recentRows.length
-  ? recentRows.map((row) => {
-      const [, date, signal, repository] = row.match(/^\| (.+) \| (.+) \| (.+) \|$/);
-      return `<tr><td>${date}</td><td>${signal}</td><td>${repository}</td></tr>`;
-    }).join('\n')
+// Skip the profile repo itself so the bot's own commits don't show up.
+const signals = events.filter(
+  (event) => repositoryName(event) !== owner && eventLabel(event),
+);
+
+const latestDate = signals.length
+  ? signals[0].created_at.slice(0, 10)
+  : "No recent public activity";
+
+const activityRows = signals.length
+  ? signals
+      .slice(0, 3)
+      .map(
+        (event) =>
+          `<tr><td>${event.created_at.slice(0, 10)}</td><td>${eventLabel(event)}</td><td>${repositoryName(event)}</td></tr>`,
+      )
+      .join("\n")
   : '<tr><td colspan="3">No recent public activity</td></tr>';
 
 const generated = `<!-- PROFILE_STATS:START -->
@@ -125,7 +94,10 @@ const generated = `<!-- PROFILE_STATS:START -->
 <td valign="top" width="50%">
 <strong>Live signal</strong>
 <table>
-<tr><th align="left">Metric</th><th align="right">Current</th></tr>${signalRows}
+<tr><th align="left">Metric</th><th align="right">Current</th></tr>
+<tr><td>Public repositories</td><td align="right">${profile.public_repos}</td></tr>
+<tr><td>Core stack</td><td align="right">${coreStack}</td></tr>
+<tr><td>Latest activity</td><td align="right">${latestDate}</td></tr>
 </table>
 </td>
 <td valign="top" width="50%">
@@ -138,23 +110,19 @@ ${activityRows}
 </tr>
 </table>
 
-_Generated daily from the public GitHub API by GitHub Actions. LinkedIn and other social metrics require their official APIs and account credentials._
+_Generated daily from the public GitHub API by GitHub Actions._
 <!-- PROFILE_STATS:END -->`;
 
-const projects = `<!-- PROJECTS:START -->
-| Repository | Description |
-| --- | --- |
-${projectRowsMarkdown.join('\n')}
-<!-- PROJECTS:END -->`;
+const readme = await fs.readFile(readmePath, "utf8");
 
-const readme = await fs.readFile(readmePath, 'utf8');
-const updated = readme
-  .replace(/<!-- PROFILE_STATS:START -->[\s\S]*?<!-- PROFILE_STATS:END -->/, generated)
-  .replace(/<!-- PROJECTS:START -->[\s\S]*?<!-- PROJECTS:END -->/, projects);
-
-if (!readme.includes('<!-- PROFILE_STATS:START -->') || !readme.includes('<!-- PROJECTS:START -->')) {
-  throw new Error('README automation markers were not found');
+if (!readme.includes("<!-- PROFILE_STATS:START -->")) {
+  throw new Error("README automation markers were not found");
 }
+
+const updated = readme.replace(
+  /<!-- PROFILE_STATS:START -->[\s\S]*?<!-- PROFILE_STATS:END -->/,
+  generated,
+);
 
 if (updated !== readme) {
   await fs.writeFile(readmePath, updated);
