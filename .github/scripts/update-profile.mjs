@@ -152,8 +152,10 @@ const updated = readme
   .replace(/<!-- PROFILE_STATS:START -->[\s\S]*?<!-- PROFILE_STATS:END -->/, generated)
   .replace(/<!-- PROJECTS:START -->[\s\S]*?<!-- PROJECTS:END -->/, projects);
 
-if (updated === readme || !readme.includes('<!-- PROFILE_STATS:START -->') || !readme.includes('<!-- PROJECTS:START -->')) {
+if (!readme.includes('<!-- PROFILE_STATS:START -->') || !readme.includes('<!-- PROJECTS:START -->')) {
   throw new Error('README automation markers were not found');
 }
 
-await fs.writeFile(readmePath, updated);
+if (updated !== readme) {
+  await fs.writeFile(readmePath, updated);
+}
