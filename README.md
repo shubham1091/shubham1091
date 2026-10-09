@@ -37,11 +37,11 @@ The project board below is generated from my public GitHub repositories. Descrip
 | Repository | Description |
 | --- | --- |
 | [Email-Desing](https://github.com/shubham1091/Email-Desing) | Public project repository. |
-| [dotfiles](https://github.com/shubham1091/dotfiles) | Public project repository. |
-| [Shift-sync](https://github.com/shubham1091/Shift-sync) | Public project repository. |
-| [portfolio](https://github.com/shubham1091/portfolio) | Public project repository. |
-| [NEC-assessment](https://github.com/shubham1091/NEC-assessment) | Public project repository. |
-| [KPA-Election](https://github.com/shubham1091/KPA-Election) | Public project repository. |
+| [dotfiles](https://github.com/shubham1091/dotfiles) | One script from a fresh macOS install to a fully configured workstation: |
+| [Shift-sync](https://github.com/shubham1091/Shift-sync) | A Chrome extension that reads your UKG/Kronos work schedule and syncs it to Google Calendar - no manual copying, no opening the Kronos site by hand. |
+| [portfolio](https://github.com/shubham1091/portfolio) | This is a template for a new Vite project with React, TypeScript, and shadcn/ui. |
+| [NEC-assessment](https://github.com/shubham1091/NEC-assessment) | **Advanced Data Machine Learning (ADML) Group 5 Project** |
+| [KPA-Election](https://github.com/shubham1091/KPA-Election) | Single Next.js application with admin, voter, and API functionality all in one. |
 <!-- PROJECTS:END -->
 
 ## GitHub dashboard
@@ -55,16 +55,16 @@ The project board below is generated from my public GitHub repositories. Descrip
 <tr><th align="left">Metric</th><th align="right">Current</th></tr>
 <tr><td>Public repositories</td><td align="right">19</td></tr>
 <tr><td>Followers</td><td align="right">8</td></tr>
-<tr><td>Latest activity</td><td align="right">2025-10-24</td></tr>
+<tr><td>Latest activity</td><td align="right">2026-10-09</td></tr>
 </table>
 </td>
 <td valign="top" width="50%">
 <strong>Recent public activity</strong>
 <table>
 <tr><th align="left">Date</th><th align="left">Signal</th><th align="left">Repository</th></tr>
+<tr><td>2026-10-09</td><td>Pushed 0 commit(s)</td><td>shubham1091</td></tr>
 <tr><td>2025-10-24</td><td>Public activity</td><td>Email-Desing</td></tr>
 <tr><td>2026-09-30</td><td>Pushed 0 commit(s)</td><td>dotfiles</td></tr>
-<tr><td>2026-09-16</td><td>Pushed 0 commit(s)</td><td>Shift-sync</td></tr>
 </table>
 </td>
 </tr>
