@@ -33,23 +33,23 @@
 <table>
 <tr><th align="left">Metric</th><th align="right">Current</th></tr>
 <tr><td>Public repositories</td><td align="right">19</td></tr>
-<tr><td>Followers</td><td align="right">8</td></tr>
-<tr><td>Latest activity</td><td align="right">2026-10-09</td></tr>
+<tr><td>Core stack</td><td align="right">Python, SQL, TypeScript, Next.js</td></tr>
+<tr><td>Latest activity</td><td align="right">2025-10-24</td></tr>
 </table>
 </td>
 <td valign="top" width="50%">
 <strong>Recent public activity</strong>
 <table>
 <tr><th align="left">Date</th><th align="left">Signal</th><th align="left">Repository</th></tr>
-<tr><td>2026-10-09</td><td>Pushed 0 commit(s)</td><td>shubham1091</td></tr>
-<tr><td>2025-10-24</td><td>Public activity</td><td>Email-Desing</td></tr>
-<tr><td>2026-09-30</td><td>Pushed 0 commit(s)</td><td>dotfiles</td></tr>
+<tr><td>2025-10-24</td><td>Made a repository public</td><td>Email-Desing</td></tr>
+<tr><td>2026-09-30</td><td>Pushed to main</td><td>dotfiles</td></tr>
+<tr><td>2026-09-16</td><td>Pushed to main</td><td>Shift-sync</td></tr>
 </table>
 </td>
 </tr>
 </table>
 
-_Generated daily from the public GitHub API by GitHub Actions. LinkedIn and other social metrics require their official APIs and account credentials._
+_Generated daily from the public GitHub API by GitHub Actions._
 <!-- PROFILE_STATS:END -->
 
 <p align="center">
