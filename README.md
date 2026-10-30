@@ -42,7 +42,6 @@
 <table>
 <tr><th align="left">Date</th><th align="left">Signal</th><th align="left">Repository</th></tr>
 <tr><td>2025-10-24</td><td>Made a repository public</td><td>Email-Desing</td></tr>
-<tr><td>2026-09-30</td><td>Pushed to main</td><td>dotfiles</td></tr>
 </table>
 </td>
 </tr>
