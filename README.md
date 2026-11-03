@@ -34,14 +34,14 @@
 <tr><th align="left">Metric</th><th align="right">Current</th></tr>
 <tr><td>Public repositories</td><td align="right">19</td></tr>
 <tr><td>Core stack</td><td align="right">Python, SQL, TypeScript, Next.js</td></tr>
-<tr><td>Latest activity</td><td align="right">2025-10-24</td></tr>
+<tr><td>Latest activity</td><td align="right">No recent public activity</td></tr>
 </table>
 </td>
 <td valign="top" width="50%">
 <strong>Recent public activity</strong>
 <table>
 <tr><th align="left">Date</th><th align="left">Signal</th><th align="left">Repository</th></tr>
-<tr><td>2025-10-24</td><td>Made a repository public</td><td>Email-Desing</td></tr>
+<tr><td colspan="3">No recent public activity</td></tr>
 </table>
 </td>
 </tr>
